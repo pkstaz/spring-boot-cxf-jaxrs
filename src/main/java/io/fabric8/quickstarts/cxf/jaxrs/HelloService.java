@@ -31,7 +31,7 @@ public interface HelloService {
     
     @GET
     @Path("getDatos/{a}")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     String sayHello(@PathParam("a") String a);
 
     @POST
