@@ -43,7 +43,7 @@ public class HelloServiceImpl implements HelloService {
 					"  \"nombre\": \"Carlos\"," + 
 					"  \"apellido\": \"Estay\"," + 
 					"  \"origen\": \"SCL\"," + 
-					"  \"destino\" \"IQQ\"," + 
+					"  \"destino\": \"IQQ\"," + 
 					"  \"asiento\": \"13F\"" + 
 					"}";
 		}else if (rut == 24323450) {
@@ -51,7 +51,7 @@ public class HelloServiceImpl implements HelloService {
 					"  \"nombre\": \"Cristian\"," + 
 					"  \"apellido\": \"Duarte\"," + 
 					"  \"origen\": \"SCL\"," + 
-					"  \"destino\" \"IQQ\"," + 
+					"  \"destino\": \"IQQ\"," + 
 					"  \"asiento\": \"14F\"" + 
 					"}";
 		}else {
@@ -59,7 +59,7 @@ public class HelloServiceImpl implements HelloService {
 					"  \"nombre\": \"no data\"," + 
 					"  \"apellido\": \"no data\"," + 
 					"  \"origen\": \"no data\"," + 
-					"  \"destino\" \"no data\"," + 
+					"  \"destino\": \"no data\"," + 
 					"  \"asiento\": \"no data\"" + 
 					"}";
 		}
