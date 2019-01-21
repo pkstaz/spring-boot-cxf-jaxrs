@@ -25,22 +25,17 @@ import javax.ws.rs.core.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
  
-@Path("/sayHello")
+@Path("/latam")
 @Service
 public interface HelloService {
- 
-    @GET
-    @Path("")
-    @Produces(MediaType.TEXT_PLAIN)
-    String welcome();
     
     @GET
-    @Path("/{a}")
+    @Path("getDatos/{a}")
     @Produces(MediaType.TEXT_PLAIN)
     String sayHello(@PathParam("a") String a);
 
     @POST
-    @Path("/HelloLatam")
+    @Path("/obtenerDatos")
     @Produces(MediaType.APPLICATION_JSON)
     String obtenerDatos(@RequestBody String json);
 }

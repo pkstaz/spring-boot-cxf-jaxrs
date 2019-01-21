@@ -18,15 +18,40 @@ package io.fabric8.quickstarts.cxf.jaxrs;
 import org.json.JSONObject;
 import io.swagger.annotations.Api;
 
-@Api("/sayHello")
+@Api("/latam")
 public class HelloServiceImpl implements HelloService {
 
-    public String welcome() {
-        return "Welcome to the CXF RS Spring Boot application, append /{name} to call the hello service";
-    }
 
     public String sayHello(String a) {
-        return "Hello " + a + ", Welcome to CXF RS Spring Boot World!!!";
+        String response;
+        
+        if("17462670".equals(a)) {
+			response = "{" + 
+					"  \"nombre\": \"Carlos\"," + 
+					"  \"apellido\": \"Estay\"," + 
+					"  \"origen\": \"SCL\"," + 
+					"  \"destino\": \"IQQ\"," + 
+					"  \"asiento\": \"13F\"" + 
+					"}";
+		}else if ("17462670".equals(a)) {
+			response = "{" + 
+					"  \"nombre\": \"Cristian\"," + 
+					"  \"apellido\": \"Duarte\"," + 
+					"  \"origen\": \"SCL\"," + 
+					"  \"destino\": \"IQQ\"," + 
+					"  \"asiento\": \"14F\"" + 
+					"}";
+		}else {
+			response = "{" + 
+					"  \"nombre\": \"no data\"," + 
+					"  \"apellido\": \"no data\"," + 
+					"  \"origen\": \"no data\"," + 
+					"  \"destino\": \"no data\"," + 
+					"  \"asiento\": \"no data\"" + 
+					"}";
+		}
+        
+        return response;
     }
 
 	@Override
@@ -63,7 +88,6 @@ public class HelloServiceImpl implements HelloService {
 					"  \"asiento\": \"no data\"" + 
 					"}";
 		}
-
 		
 		return response;
 	}
