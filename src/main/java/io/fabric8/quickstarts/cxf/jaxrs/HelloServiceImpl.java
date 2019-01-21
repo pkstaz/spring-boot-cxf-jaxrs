@@ -39,28 +39,28 @@ public class HelloServiceImpl implements HelloService {
 		String dv = jsonObj.getString("dv");
 		
 		if(rut == 17462670) {
-			response = "{\n" + 
-					"  \"nombre\": \"Carlos\",\n" + 
-					"  \"apellido\": \"Estay\",\n" + 
-					"  \"origen\": \"SCL\",\n" + 
-					"  \"destino\" \"IQQ\",\n" + 
-					"  \"asiento\": \"13F\"\n" + 
+			response = "{" + 
+					"  \"nombre\": \"Carlos\"," + 
+					"  \"apellido\": \"Estay\"," + 
+					"  \"origen\": \"SCL\"," + 
+					"  \"destino\" \"IQQ\"," + 
+					"  \"asiento\": \"13F\"" + 
 					"}";
 		}else if (rut == 24323450) {
-			response = "{\n" + 
-					"  \"nombre\": \"Cristian\",\n" + 
-					"  \"apellido\": \"Duarte\",\n" + 
-					"  \"origen\": \"SCL\",\n" + 
-					"  \"destino\" \"IQQ\",\n" + 
-					"  \"asiento\": \"14F\"\n" + 
+			response = "{" + 
+					"  \"nombre\": \"Cristian\"," + 
+					"  \"apellido\": \"Duarte\"," + 
+					"  \"origen\": \"SCL\"," + 
+					"  \"destino\" \"IQQ\"," + 
+					"  \"asiento\": \"14F\"" + 
 					"}";
 		}else {
-			response = "{\n" + 
-					"  \"nombre\": \"no data\",\n" + 
-					"  \"apellido\": \"no data\",\n" + 
-					"  \"origen\": \"no data\",\n" + 
-					"  \"destino\" \"no data\",\n" + 
-					"  \"asiento\": \"no data\"\n" + 
+			response = "{" + 
+					"  \"nombre\": \"no data\"," + 
+					"  \"apellido\": \"no data\"," + 
+					"  \"origen\": \"no data\"," + 
+					"  \"destino\" \"no data\"," + 
+					"  \"asiento\": \"no data\"" + 
 					"}";
 		}
 
