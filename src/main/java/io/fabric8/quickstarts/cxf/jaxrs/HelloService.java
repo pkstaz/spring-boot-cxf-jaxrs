@@ -16,12 +16,14 @@
 package io.fabric8.quickstarts.cxf.jaxrs;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
  
 @Path("/sayHello")
 @Service
@@ -37,4 +39,8 @@ public interface HelloService {
     @Produces(MediaType.TEXT_PLAIN)
     String sayHello(@PathParam("a") String a);
 
+    @POST
+    @Path("/HelloLatam")
+    @Produces(MediaType.APPLICATION_JSON)
+    String obtenerDatos(@RequestBody String json);
 }
